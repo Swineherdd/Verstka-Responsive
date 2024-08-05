@@ -1,0 +1,878 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+     <link rel="stylesheet" href="style/media.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <title>Document</title>
+</head>
+<body>
+     <nav class="nav">
+        <div class="container nav_content">
+            <a href="#">
+                <img class="nav_logo" src="Assets/logo-header.png" alt="">
+            </a>
+            <ul class="nav_list">
+                <li><a href="" class="nav_link">Услуги</a></li>
+                <li><a href="" class="nav_link">Продукция</a></li>
+                <li><a href="" class="nav_link">О компании</a></li>
+                <li><a href="" class="nav_link">Портфолио</a></li>
+                <li><a href="" class="nav_link">Вопрос-ответ</a></li>
+                <li><a href="" class="nav_link">Контакты</a></li>
+                 <li><a href="" class="nav_link nav_link--pop">НЕ НАДО()</a></li>
+            </ul>
+            <div class="nav_btns">
+                <button class="btn">
+                    <img src="Assets/logo-btn1.png" alt="">
+                    Заявка на замер
+                </button>
+                <button class="btn">
+                    <img src="Assets/logo-btn2.png" alt="">
+                    Заявка на расчёт
+                </button>
+            </div>
+            <button class="nav_btn">
+                <span>
+
+                </span>
+            </button>
+            <div class="nav_forms">
+                <form action="" class="nav_form">
+                    <h2 class="form_title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="30" viewBox="0 0 33 30" fill="none">
+  <path d="M31.75 12.9568H1.75V28.5123H31.75V12.9568Z" stroke="#FEFEFE" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M6.19458 12.9568V21.8457" stroke="#FEFEFE" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M11.75 12.9568V16.2901" stroke="#FEFEFE" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M16.1945 12.9568V21.8457" stroke="#FEFEFE" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M21.75 12.9568V16.2901" stroke="#FEFEFE" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M26.1943 12.9568V21.8457" stroke="#FEFEFE" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1.75 12.9568V1.8457" stroke="#FEFEFE" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M31.75 14.0679V1.8457" stroke="#FEFEFE" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1.75 5.17896H31.75" stroke="#FEFEFE" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M6.19444 1.8457L1.75 5.17904L6.19444 8.51237" stroke="#FEFEFE" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M26.1943 1.8457L31.7499 5.17904L26.1943 8.51237" stroke="#FEFEFE" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                        Вызвать замерщика на дом
+                    </h2>
+                    <input type="text" class="form_input" required placeholder="Ваше имя">
+                    <input type="number" inputmode="numeric" class="form_input" required placeholder="Номер телефона">
+                    <input type="email" class="form_input" required placeholder="E-mail">
+                    <div class="yes">
+                    <input type="checkbox" class="form_yes">
+                    <p class="form_text">
+                        Я согласен(на) на обработку <a class="popa" href="#">персональных данных</a>
+                    </p>
+                    </div>
+                    <button class="form_btn">
+                        Отправить заявку
+                    </button>
+                    <span class="form_close">X</span>
+                </form>
+                <form action="" class="nav_form">
+                    <h2 class="form_title">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="30" viewBox="0 0 33 30" fill="none">
+  <path d="M31.5 1.8457H1.5V28.7423H31.5V1.8457Z" stroke="#FEFEFE" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M15.9827 15.2939V28.7422" stroke="#FEFEFE" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M1.5 15.2939H30.4655" stroke="#FEFEFE" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M8.74146 19.4319V24.6043" stroke="#FEFEFE" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M5.63794 21.5007H11.8448" stroke="#FEFEFE" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M20.1206 20.4663H27.362" stroke="#FEFEFE" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M20.1206 23.5698H27.362" stroke="#FEFEFE" stroke-width="2" stroke-miterlimit="22.9256" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+                        Заказать расчет
+                    </h2>
+                    <input type="text" class="form_input" required placeholder="Ваше имя">
+                    <input type="number" inputmode="numeric" class="form_input" required placeholder="Номер телефона">
+                    <input type="email" class="form_input" required placeholder="E-mail">
+                    <div class="yes">
+                    <input type="checkbox" class="form_yes">
+                    <p class="form_text">
+                        Я согласен(на) на обработку <a class="silika" href="#">персональных данных</a>
+                    </p>
+                    </div>
+                    <button class="form_btn">
+                        Заказать расчет
+                    </button>
+                    <span class="form_close">X</span>
+                </form>
+            </div>
+        </div>
+        <div class="bg"></div>
+     </nav>
+
+
+     <header class="header">
+        <div class="container header_block">
+            <div class="header_left">
+                <span class="header_span">Окна Хаус -</span>
+                <h1 class="header_title">Профессиональный подход к остеклению</h1>
+                <div class="header_cards">
+                    <div class="header_card">
+                        <img class="header_card_img" src="Assets/card1.png" alt="">
+                        <p class="header_card_text">Современные окна и балконные конструкции по доступным ценам</p>
+                    </div>
+                    <div class="header_card">
+                        <img class="header_card_img" src="Assets/card2.png" alt="">
+                        <p class="header_card_text">Квалифицированный подход к решению задач любой сложности</p>
+                    </div>
+                    <div class="header_card">
+                        <img class="header_card_img" src="Assets/card3.png" alt="">
+                        <p class="header_card_text">Гарантия высочайшего качества нашей продукции</p>
+                    </div>
+                </div>
+            </div>
+            <form class="header_right">
+                <h2 class="header_rigt-title">Вызвать замершика на дом</h2>
+                <input type="text" class="header_right-inp" required placeholder="Представьтесь, пожалуйста">
+                <input type="number" inputmode="numeric" class="header_right-inp" required placeholder="Номер телефона">
+                <input type="email"  class="header_right-inp" required placeholder="E-mail">
+                <div class="header_right-yes">
+                <input type="checkbox" class="header_right-check">
+                    <p class="header_right-text">Согласен на обработку персональных данных в соответствии с
+                         <a href="#">политикой конфиденциальности</a>
+                    </p>
+                </div>
+                <button class="header_right-btn">
+                    Отправить заявку
+                </button>
+            </form>
+        </div>
+     </header>
+
+     <main class="main">
+        <section class="services">
+           <div class="container">
+            <h3 class="title">
+                Наши услуги
+            </h3>
+            <div class="services_cards">
+                <div class="services_card">
+                    <img class="services_card-img" src="Assets/bgs1.jpg" alt="">
+                    <div class="services_item">
+                        <div class="services_item-titles">
+                            <img src="Assets/services1.png" alt="">
+                            <h4 class="services_item-title">
+                                Установка пластиковых окон
+                            </h4>
+                        </div>
+                        <p class="services_item-text">
+                            Устанавливаем пластиковые окна Rehau от проверенного производителя с гарантией качества
+                        </p>
+                    </div>
+                        <svg  class="services_arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="21" viewBox="0 0 40 21" fill="none">
+                    <path  d="M23.3846 1.75L38 10.75L23.3846 19.75"  stroke-width="2"/>
+                    <path  d="M0 10.75H37.0256"  stroke-width="2"/>
+                        </svg>
+                </div>
+                <div class="services_card">
+                    <img class="services_card-img" src="Assets/popa.png" alt="">
+                    <div class="services_item">
+                        <div class="services_item-titles">
+                            <img src="Assets/services3.png" alt="">
+                            <h4 class="services_item-title">
+                                Остекление балконов и лоджий
+                            </h4>
+                        </div>
+                        <p class="services_item-text">
+                            Занимаемся остеклением и отделкой балконов и лоджий. Теплое и холодное остекление, изготовление выносов и крыш. Беремся за сложные объекты
+                        </p>
+                    </div>
+                        <svg  class="services_arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="21" viewBox="0 0 40 21" fill="none">
+                    <path  d="M23.3846 1.75L38 10.75L23.3846 19.75"  stroke-width="2"/>
+                    <path  d="M0 10.75H37.0256"  stroke-width="2"/>
+                        </svg>
+                </div>
+                <div class="services_card">
+                    <img class="services_card-img" src="Assets/bgs3.jpg" alt="">
+                    <div class="services_item">
+                        <div class="services_item-titles">
+                            <img src="Assets/services2.png" alt="">
+                            <h4 class="services_item-title">
+                               Остекление коттеджей и дач
+                            </h4>
+                        </div>
+                        <p class="services_item-text">
+                            Остекление и отделка под ключ:от коттеджей и дач до терраси беседок. Выделяем личного технолога под каждый объект
+                        </p>
+                    </div>
+                        <svg  class="services_arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="21" viewBox="0 0 40 21" fill="none">
+                    <path  d="M23.3846 1.75L38 10.75L23.3846 19.75"  stroke-width="2"/>
+                    <path  d="M0 10.75H37.0256"  stroke-width="2"/>
+                        </svg>
+                </div>
+                <div class="services_card">
+                    <img class="services_card-img" src="Assets/bgs4.jpg" alt="">
+                    <div class="services_item">
+                        <div class="services_item-titles">
+                            <img src="Assets/services4.png" alt="">
+                            <h4 class="services_item-title">
+                                Остекление корпоративных объектов
+
+                            </h4>
+                        </div>
+                        <p class="services_item-text">
+                            Реализуем сложные проектыпо остеклению торговых центров, ресторанов, производственных помещений и офисов
+                        </p>
+                    </div>
+                        <svg  class="services_arrow" xmlns="http://www.w3.org/2000/svg" width="40" height="21" viewBox="0 0 40 21" fill="none">
+                    <path  d="M23.3846 1.75L38 10.75L23.3846 19.75"  stroke-width="2"/>
+                    <path  d="M0 10.75H37.0256"  stroke-width="2"/>
+                        </svg>
+                </div>
+            </div>
+           </div>
+           <div class="services_blocks">
+            <div class="services_block">
+                <div class="services_swiper">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <img src="Assets/swiper1.png" alt="" class="swiper-slide">
+                            <img src="Assets/swiper2.png" alt="" class="swiper-slide">
+                            <img src="Assets/swiper3.png" alt="" class="swiper-slide">
+                            <img src="Assets/swiper4.png" alt="" class="swiper-slide">
+                            <img src="Assets/swiper1.png" alt="" class="swiper-slide">
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-wrapper-titles">
+                        <h2>
+                            Установка пластиковых окон
+                        </h2>
+                        <p>
+                            Пластиковые окна Rehau от проверенного производителя с гарантией качества
+                        </p>
+                    </div>
+                </div>
+                <div class="services_drops">
+                    <div class="services_drop">
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form1.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                    Пластиковые окна
+                                </h3>
+                                <p>
+                                    Использование ламинационных окон, ламинации в массе, 3д-ламинации, а также покраска окон.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form3.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                   Подоконники
+                                </h3>
+                                <p>
+                                    Качественный подоконник не царапается, выдерживает большие нагрузки и будет служить вам долгие годы.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form5.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                   Проветриватели
+                                </h3>
+                                <p>
+                                    Постоянное обновление воздуха в комнате снижает риск аллергии, улучшает сон и благоприятно влияет на самочувствие.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services_drop">
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form2.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                   Ламинация
+                                </h3>
+                                <p>
+                                    Пластиковые окна могут быть любого нужного вам цвета. Внутри и снаружи.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form4.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                  Цветные ручки
+                                </h3>
+                                <p>
+                                  Оригинальные оконные ручки подчеркнут дизайн окна. Подберем оптимальный цвет ручек в зависимости от цвета всей конструкции.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form6.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                  Москитные сетки
+                                </h3>
+                                <p>
+                                  Нежеланные насекомые останутся на улице, а ваша кошка - в квартире. Устанавливаем сетки для пластиковых окон любых форм и размеров.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="services_block-span">X</span>
+            </div>
+             <div class="services_block">
+                <div class="services_swiper">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <img src="Assets/swiper1.png" alt="" class="swiper-slide">
+                            <img src="Assets/swiper2.png" alt="" class="swiper-slide">
+                            <img src="Assets/swiper3.png" alt="" class="swiper-slide">
+                            <img src="Assets/swiper4.png" alt="" class="swiper-slide">
+                            <img src="Assets/swiper1.png" alt="" class="swiper-slide">
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-wrapper-titles">
+                        <h2>
+                            Остекление балконов и лоджий
+                        </h2>
+                        <p>
+                             Занимаемся остеклением и отделкой балконов и лоджий. Теплое и холодное остекление, изготовление выносов и крыш. Беремся за сложные объекты
+                        </p>
+                    </div>
+                </div>
+                <div class="services_drops">
+                    <div class="services_drop">
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form1.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                    Пластиковые окна
+                                </h3>
+                                <p>
+                                    Использование ламинационных окон, ламинации в массе, 3д-ламинации, а также покраска окон.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form3.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                   Подоконники
+                                </h3>
+                                <p>
+                                    Качественный подоконник не царапается, выдерживает большие нагрузки и будет служить вам долгие годы.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form5.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                   Проветриватели
+                                </h3>
+                                <p>
+                                    Постоянное обновление воздуха в комнате снижает риск аллергии, улучшает сон и благоприятно влияет на самочувствие.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services_drop">
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form2.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                   Ламинация
+                                </h3>
+                                <p>
+                                    Пластиковые окна могут быть любого нужного вам цвета. Внутри и снаружи.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form4.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                  Цветные ручки
+                                </h3>
+                                <p>
+                                  Оригинальные оконные ручки подчеркнут дизайн окна. Подберем оптимальный цвет ручек в зависимости от цвета всей конструкции.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form6.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                  Москитные сетки
+                                </h3>
+                                <p>
+                                  Нежеланные насекомые останутся на улице, а ваша кошка - в квартире. Устанавливаем сетки для пластиковых окон любых форм и размеров.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="services_block-span">X</span>
+            </div>
+             <div class="services_block">
+                <div class="services_swiper">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <img src="Assets/swiper1.png" alt="" class="swiper-slide">
+                            <img src="Assets/swiper2.png" alt="" class="swiper-slide">
+                            <img src="Assets/swiper3.png" alt="" class="swiper-slide">
+                            <img src="Assets/swiper4.png" alt="" class="swiper-slide">
+                            <img src="Assets/swiper1.png" alt="" class="swiper-slide">
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-wrapper-titles">
+                        <h2>
+                            Остекление коттеджей и дач
+                        </h2>
+                        <p>
+                            Остекление и отделка под ключ: от коттеджей и дач до террас и беседок. Выделяем личного технолога под каждый объект.
+                        </p>
+                    </div>
+                </div>
+                <div class="services_drops">
+                    <div class="services_drop">
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form1.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                    Пластиковые окна
+                                </h3>
+                                <p>
+                                    Использование ламинационных окон, ламинации в массе, 3д-ламинации, а также покраска окон.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form3.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                   Подоконники
+                                </h3>
+                                <p>
+                                    Качественный подоконник не царапается, выдерживает большие нагрузки и будет служить вам долгие годы.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form5.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                   Проветриватели
+                                </h3>
+                                <p>
+                                    Постоянное обновление воздуха в комнате снижает риск аллергии, улучшает сон и благоприятно влияет на самочувствие.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services_drop">
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form2.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                   Ламинация
+                                </h3>
+                                <p>
+                                    Пластиковые окна могут быть любого нужного вам цвета. Внутри и снаружи.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form4.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                  Цветные ручки
+                                </h3>
+                                <p>
+                                  Оригинальные оконные ручки подчеркнут дизайн окна. Подберем оптимальный цвет ручек в зависимости от цвета всей конструкции.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form6.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                  Москитные сетки
+                                </h3>
+                                <p>
+                                  Нежеланные насекомые останутся на улице, а ваша кошка - в квартире. Устанавливаем сетки для пластиковых окон любых форм и размеров.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="services_block-span">X</span>
+            </div>
+             <div class="services_block">
+                <div class="services_swiper">
+                    <div class="swiper mySwiper">
+                        <div class="swiper-wrapper">
+                            <img src="Assets/swiper1.png" alt="" class="swiper-slide">
+                            <img src="Assets/swiper2.png" alt="" class="swiper-slide">
+                            <img src="Assets/swiper3.png" alt="" class="swiper-slide">
+                            <img src="Assets/swiper4.png" alt="" class="swiper-slide">
+                            <img src="Assets/swiper1.png" alt="" class="swiper-slide">
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                    <div class="swiper-wrapper-titles">
+                        <h2>
+                           Остекление корпоративных объектов
+                        </h2>
+                        <p>
+                            Реализуем сложные проекты по остеклению торговых центров, ресторанов, производственных помещений и офисов
+                        </p>
+                    </div>
+                </div>
+                <div class="services_drops">
+                    <div class="services_drop">
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form1.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                    Пластиковые окна
+                                </h3>
+                                <p>
+                                    Использование ламинационных окон, ламинации в массе, 3д-ламинации, а также покраска окон.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form3.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                   Подоконники
+                                </h3>
+                                <p>
+                                    Качественный подоконник не царапается, выдерживает большие нагрузки и будет служить вам долгие годы.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form5.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                   Проветриватели
+                                </h3>
+                                <p>
+                                    Постоянное обновление воздуха в комнате снижает риск аллергии, улучшает сон и благоприятно влияет на самочувствие.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="services_drop">
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form2.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                   Ламинация
+                                </h3>
+                                <p>
+                                    Пластиковые окна могут быть любого нужного вам цвета. Внутри и снаружи.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form4.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                  Цветные ручки
+                                </h3>
+                                <p>
+                                  Оригинальные оконные ручки подчеркнут дизайн окна. Подберем оптимальный цвет ручек в зависимости от цвета всей конструкции.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="services_drop-items">
+                            <img src="Assets/services-form6.png" alt="">
+                            <div class="services_drop-item">
+                                <h3>
+                                  Москитные сетки
+                                </h3>
+                                <p>
+                                  Нежеланные насекомые останутся на улице, а ваша кошка - в квартире. Устанавливаем сетки для пластиковых окон любых форм и размеров.
+
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <span class="services_block-span">X</span>
+            </div>
+
+           </div>
+           <div class="services_bg">
+            
+           </div>
+        </section>
+     </main>
+
+
+     <main class="main_product">
+        <section class="section_product">
+            <div class="container">
+                <h3 class="title title--lol">
+                Продукция
+                </h3>
+
+                <!-- Slider main container -->
+               
+                <div class="swiper-container">
+                   
+                <div class="swiper swiper--product">
+                    
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper swiper-wrapper--product">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="Assets/lolik.png" alt="" class="production">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Assets/lolik.png" alt="" class="production">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Assets/lolik.png" alt="" class="production">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Assets/lolik.png" alt="" class="production">
+                </div>
+                </div>
+                </div>
+                      <div class="swiper-pagination swiper-pagination--pop">
+                          <div class="list_btns">
+                    <button class="list_btn "  onclick = "Gog()">
+                        Стандарт 
+                    </button>
+                    <button class="list_btn"  onclick = "Gog()">
+                        Бизнес
+                    </button>
+                    <button class="list_btn"  onclick = "Gog()">
+                        Премиум
+                    </button>
+                    <button class="list_btn"  onclick = "Gog()" >
+                        Эксклюзив
+                    </button>
+                     </div>
+                     </div>
+                     <div class="obsha">
+                    <div class="swiper-button-next" onclick = "Gog()"> 
+                    </div>
+                     <div class="swiper-button-prev" onclick = "Gog()">
+                    </div>
+                     </div>
+               
+                
+                </div>
+                
+            </div>
+        </section>
+     </main>
+
+     <main class="main_af">
+            <div class="af_logo">
+                <img src="Assets/AF-logo.png" alt="">
+            </div>
+            <div class="blokis">
+            <div class="items_standart">
+                <div class="item_standart">
+                    <img class="img_standart" src="Assets/AF1.png" alt="">
+                    <p class="p_standart">Сертифицированный производитель Rehau</p>
+                </div>
+                <div class="item_standart">
+                    <img class="img_standart" src="Assets/AF2.png" alt="">
+                    <p class="p_standart">Инновационный оконный завод</p>
+                </div>
+                <div class="item_standart">
+                    <img class="img_standart" src="Assets/AF3.png" alt="">
+                    <p class="p_standart">Лидер по переработке профилей Rehau в России</p>
+                </div>
+                <div class="item_standart">
+                    <img class="img_standart" src="Assets/AF4.png" alt="">
+                    <p class="p_standart">Высокотехнологичное автоматизированное оборудование</p>
+                </div>
+                <div class="item_standart">
+                    <img class="img_standart" src="Assets/AF5.png" alt="">
+                    <p class="p_standart">Широкий ассортимент продукции</p>
+                </div>
+            </div>
+            </div>
+     </main>
+
+     <main class="main_uslug">    
+        <section class="section_uslug">
+            <div class="container">
+                <h3 class="title title--uslug">
+                О компании
+                </h3>
+                <div class="swiper-container">
+                   
+                <div class="swiper swiper--uslugi">
+                    
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper swiper-wrapper--uslugi">
+                <!-- Slides -->
+                <div class="swiper-slide">
+                    <img src="Assets/uslug-slider1.png" alt="" class="production">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Assets/uslug-slider2.png" alt="" class="production">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Assets/lolik.png" alt="" class="production">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Assets/lolik.png" alt="" class="production">
+                </div>
+                </div>
+                </div>
+                      <div class="swiper-pagination swiper-pagination--lol">
+                          <div class="list_btns">
+                    <button class="list_btn ">
+                        Стандарт 
+                    </button>
+                    <button class="list_btn">
+                        Бизнес
+                    </button>
+                    <button class="list_btn">
+                        Премиум
+                    </button>
+                    <button class="list_btn">
+                        Эксклюзив
+                    </button>
+                     </div>
+                     </div>
+                </div>
+            </div>
+        </section>
+     </main>
+
+     <div class="secrion_icons">
+        <div class="container">
+            <div class="icons">
+                <div class="icon">
+                    <img src="Assets/лояльность.png" alt="">
+                    <div class="icon_item">
+                    <h3>Лояльность</h3>
+                    <p> 99% клиентов рекомендуют нас своим друзьям</p>
+                    </div>
+                </div>
+                 
+                <div class="icon">
+                    <img src="Assets/скорость.png" alt="">
+                    <div class="icon_item">
+                    <h3>Скорость</h3>
+                    <p>Короткие сроки установки изделий</p>
+                    </div>
+                </div>
+                <div class="icon">
+                    <img src="Assets/служба качества.png" alt="">
+                    <div class="icon_item">
+                    <h3>Служба качества</h3>
+                    <p> Безупречное качество и контроль изделий ПВХ</p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="icons">
+                <div class="icon">
+                    <img src="Assets/проф.png" alt="">
+                    <div class="icon_item">
+                    <h3>Профессионализм</h3>
+                    <p>Бригада профессиональных мастеров по монтажу и обслуживанию</p>
+                    </div>
+                </div>
+                <div class="icon">
+                    <img src="Assets/ценообразование.png" alt="">
+                    <div class="icon_item">
+                    <h3>Ценообразование</h3>
+                    <p>Лучшие цены на рынке пластиковых окон</p>
+                    </div>
+                </div>
+                <div class="icon">
+                    <img src="Assets/договор.png" alt="">
+                    <div class="icon_item">
+                    <h3>Мобильность</h3>
+                    <p>Заключение договора на дому</p>
+                    </div>
+                </div>
+            </div>
+            <div class="butin">
+                <button class="btn-lol">
+                    <img src="Assets/logo-btn1.png" alt="">
+                    Оформить заявку на замер
+                </button>
+                </div>
+        </div>
+     </div>
+
+     <main class="main_port">
+        <div class="container_port">
+            <h3 class="title title--port">
+                Портфолио
+                </h3>
+           
+                
+                <div class="swiper swiper--portfolio">
+                <div class="swiper-wrapper swiper-wrapper--port">
+                <div class="swiper-slide">
+                    <img src="Assets/slider-port1.png" alt="" class="portfolio">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Assets/slider-port2.png" alt="" class="portfolio">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Assets/slider-port3.png" alt="" class="portfolio">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Assets/slider-port4.png" alt="" class="portfolio">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Assets/slider-port1.png" alt="" class="portfolio">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Assets/slider-port2.png" alt="" class="portfolio">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Assets/slider-port3.png" alt="" class="portfolio">
+                </div>
+                <div class="swiper-slide">
+                    <img src="Assets/slider-port4.png" alt="" class="portfolio">
+                </div>
+                </div>
+                </div>
+                <div class="swiper-button-tuk">
+                    <svg class="arrow-pip" xmlns="http://www.w3.org/2000/svg" width="26" height="50" viewBox="0 0 26 50" fill="none">
+                    <path  class="arrow-pop" d="M1 0.812988L25 24.813L1 48.813" stroke="black"/>
+                    </svg>
+                </div>
+                <div class="swiper-button-tik">
+                   <svg class="arrow-pip" xmlns="http://www.w3.org/2000/svg" width="26" height="50" viewBox="0 0 26 50" fill="none">
+                    <path class="arrow-pop" d="M25 0.812988L1 24.813L25 48.813" stroke="black"/>
+                    </svg>
+                </div>  
+                
+                <iframe class="map" src="https://yandex.ru/map-widget/v1/?um=constructor%3A8cec6197d5adc3e244ea41f1f79b09355f7b7707d757093c434957c8d39b28ee&amp;source=constructor" width="100%" height="311" frameborder="0"></iframe>
+        </div>
+     </main>
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <script src="script/script.js"></script>
+    
+</body>
+</html>
+
+
+
+ 
